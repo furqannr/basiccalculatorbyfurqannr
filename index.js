@@ -20,7 +20,7 @@ async function askQuestion() {
         },
     ]).then((answers) => {
         if (isNaN(answers.Number1) || isNaN(answers.Number2)) {
-            console.log("You didn't put number. Kindly enter number next time");
+            console.log("You didn't put number. Kindly enter number next time if you want to continue");
         }
         else {
             if (answers.calculate == "Addition") {
@@ -47,7 +47,7 @@ async function continueChoice() {
         var choice = await inquirer.prompt({
             type: "input",
             name: "qa",
-            message: "Do you want to continue? Press Y for Yes and N for No ",
+            message: "Do you want to continue? Press Y or Y for Yes",
         });
     } while (choice.qa == 'yes' || choice.qa == 'Yes' || choice.qa == 'YES' || choice.qa == 'y' || choice.qa == 'Y');
 }

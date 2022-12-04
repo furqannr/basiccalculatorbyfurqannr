@@ -53,7 +53,7 @@ async function continueChoice() {
             {
                 type: "input",
                 name: "qa",
-                message: "Do you want to continue? Press Y or Y for Yes",
+                message: "Do you want to continue? Press Y or y for Yes",
             })
     }
 
