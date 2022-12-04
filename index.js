@@ -1,3 +1,4 @@
+import chalk from "chalk";
 import inquirer from "inquirer";
 //let a=chalkAnimation.rainbow("Hi").stop();
 async function askQuestion() {
@@ -5,7 +6,7 @@ async function askQuestion() {
         {
             type: "list",
             name: "calculate",
-            message: "Kindly choose the operation you want to perform",
+            message: chalk.blue("Kindly choose the operation you want to perform"),
             choices: ["Addition", "Subtraction ", "Multiplication", "Division"]
         },
         {
@@ -20,7 +21,7 @@ async function askQuestion() {
         },
     ]).then((answers) => {
         if (isNaN(answers.Number1) || isNaN(answers.Number2)) {
-            console.log("You didn't put number. Kindly enter number next time if you want to continue");
+            console.log(chalk.redBright("You didn't put number. Kindly enter number next time if you want to continue"));
         }
         else {
             if (answers.calculate == "Addition") {
@@ -47,7 +48,7 @@ async function continueChoice() {
         var choice = await inquirer.prompt({
             type: "input",
             name: "qa",
-            message: "Do you want to continue? Press Y or Y for Yes",
+            message: chalk.greenBright("Do you want to continue? Press Y or y for Yes")
         });
     } while (choice.qa == 'yes' || choice.qa == 'Yes' || choice.qa == 'YES' || choice.qa == 'y' || choice.qa == 'Y');
 }

@@ -8,7 +8,7 @@ async function askQuestion() {
         {
             type: "list",
             name: "calculate",
-            message: "Kindly choose the operation you want to perform",
+            message: chalk.blue("Kindly choose the operation you want to perform"),
             choices: ["Addition", "Subtraction ", "Multiplication", "Division"]
         },
         {
@@ -23,7 +23,7 @@ async function askQuestion() {
         },
     ]).then((answers) => {
         if (isNaN(answers.Number1) || isNaN(answers.Number2)) {
-            console.log("You didn't put number. Kindly enter number next time if you want to continue");
+            console.log(chalk.redBright("You didn't put number. Kindly enter number next time if you want to continue"));
         }
         else {
             if (answers.calculate == "Addition") {
@@ -53,7 +53,7 @@ async function continueChoice() {
             {
                 type: "input",
                 name: "qa",
-                message: "Do you want to continue? Press Y or y for Yes",
+                message: chalk.greenBright("Do you want to continue? Press Y or y for Yes")
             })
     }
 
