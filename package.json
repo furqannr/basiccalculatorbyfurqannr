@@ -1,6 +1,6 @@
 {
   "name": "basiccalculatorbyfurqannr",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Basic Calculator using inquirer",
   "main": "index.js",
   "type": "module",
