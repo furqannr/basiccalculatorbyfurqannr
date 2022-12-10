@@ -1,3 +1,4 @@
+#!usr/bin/env node
 import chalk from "chalk";
 import inquirer from "inquirer";
 import chalkAnimation from "chalk-animation";
@@ -60,4 +61,4 @@ async function continueChoice() {
 
  while (choice.qa == 'yes'|| choice.qa == 'Yes'||choice.qa == 'YES'||choice.qa == 'y'||choice.qa == 'Y');
 }
-continueChoice(); 
+continueChoice();
