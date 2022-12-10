@@ -1,5 +1,6 @@
 import chalk from "chalk";
 import inquirer from "inquirer";
+export { continueChoice };
 //let a=chalkAnimation.rainbow("Hi").stop();
 async function askQuestion() {
     await inquirer.prompt([

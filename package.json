@@ -1,6 +1,6 @@
 {
   "name": "basiccalculatorbyfurqannr",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Basic Calculator using inquirer",
   "main": "index.js",
   "type": "module",
@@ -11,7 +11,7 @@
   "author": "furqannr",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.1.2",
+    "chalk": "^5.2.0",
     "chalk-animation": "^2.0.3",
     "inquirer": "^9.1.4"
   },
