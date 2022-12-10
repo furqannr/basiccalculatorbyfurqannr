@@ -1,14 +1,14 @@
 {
   "name": "calculator2",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Basic Calculator using inquirer",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "furqannr",
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.1.2",
