@@ -5,8 +5,8 @@ Functionalities are<br/>
 ADD
 SUBTRACT
 MULTIPLY 
-DIVIDE
-The libraries used are 
+DIVIDE<br/>
+The libraries used are<br/> 
 INQUIRER
 CHALK
 CHALK-ANIMATION
